@@ -16,7 +16,7 @@ import torch.utils.data.distributed
 from torchvision import datasets, transforms
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.CRITICAL)
 logger.addHandler(logging.StreamHandler(sys.stdout))
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
