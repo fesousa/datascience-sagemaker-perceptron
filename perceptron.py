@@ -110,8 +110,7 @@ def save_model(model, model_dir):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
-    # Data and model checkpoints directories
-   
+    '''
     parser.add_argument(
         "--batch-size",
         type=int,
@@ -126,11 +125,12 @@ if __name__ == "__main__":
         metavar="N",
         help="input batch size for testing (default: 1000)",
     )
+    '''
     parser.add_argument(
-        "--a", type=float, default=0.01, metavar="LR", help="learning rate (default: 0.01)"
+        "--a", type=float, default=0.01, metavar="LR", help="taxa de aprendizado (padrao: 0.01)"
     )
     parser.add_argument(
-        "--error", type=float, default=0.1, metavar="M", help="Erro mínimo (default: 0.1)"
+        "--error", type=float, default=0.1, metavar="M", help="Erro mínimo (padrao: 0.1)"
     )
 
 
